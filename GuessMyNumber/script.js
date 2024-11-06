@@ -50,7 +50,7 @@ const handleLose = () => {
 
 const resetGame = () => {
   score = MAX_SCORE;
-  secretNumber;
+  secretNumber = Math.trunc(Math.random() * 20) + 1;
   gameOver = false;
 
   displayMessage('Start guessing...');
